@@ -9,12 +9,13 @@ on:
       - closed
 
 jobs:
-  permissions:
-    issues: write
-    pull-requests: write
-    actions: read
-    contents: read
-  uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
+  real-create-tag:
+    permissions:
+      issues: write
+      pull-requests: write
+      actions: read
+      contents: read
+    uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
 
 
 ...
