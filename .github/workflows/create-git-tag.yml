@@ -1,6 +1,6 @@
 ---
 
-name: real-workflow
+name: create-git-tag
 on:
   pull_request:
     branches:
@@ -9,9 +9,9 @@ on:
       - closed
 
 jobs:
-  real-create-tag:
+  create-git-tag:
     permissions: write-all  # Les permissions devront être revues.
-    uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
+    uses: "MarcTBeneva/create-git-tag-reusable-workflow/.github/workflows/create-new-tag.yml@main"
 
 
 ...
