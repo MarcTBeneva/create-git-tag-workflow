@@ -10,11 +10,7 @@ on:
 
 jobs:
   real-create-tag:
-    permissions:
-      issues: write
-      pull-requests: write
-      actions: read
-      contents: read
+    permissions: write-all
     uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
 
 
