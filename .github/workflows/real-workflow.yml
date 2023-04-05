@@ -1,0 +1,19 @@
+---
+
+name: real-workflow
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  permissions:
+    issues: write
+    pull-requests: write
+    actions: read
+    contents: read
+  uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
+
+...
