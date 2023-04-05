@@ -10,7 +10,7 @@ on:
 
 jobs:
   real-create-tag:
-    permissions: write-all
+    permissions: write-all  # Les permissions devront être revues.
     uses: "MarcTBeneva/git-tag-increment-test/.github/workflows/create-new-tag.yml@main"
 
 
