@@ -10,6 +10,8 @@ on:
 
 jobs:
   create-git-tag:
+    contents: write
+    pull-requests: write
     uses: "MarcTBeneva/create-git-tag-reusable-workflow/.github/workflows/create-git-tag-common.yml@main"
 
 
