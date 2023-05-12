@@ -10,7 +10,6 @@ on:
 
 jobs:
   create-git-tag:
-    permissions: write-all  # Les permissions devront être revues.
     uses: "MarcTBeneva/create-git-tag-reusable-workflow/.github/workflows/create-git-tag-common.yml@main"
 
 
